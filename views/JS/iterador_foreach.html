@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR EACH</title>
+</head>
+<body>
+    <script>
+        var numeros = [1, 10, 25, 50, 3];
+        for (let index = 0; index < numeros.length; index++) {
+            console.log(numeros[index]);
+        }
+
+        
+        numeros.forEach(miIterador); 
+
+        function miIterador(value, index, original) { //FUNCION COMUN O DECLARADA
+            console.log('valor: '+value);
+            console.log('indice: '+index);
+        }
+        
+        //FUNCION ANONIMA
+        numeros.forEach(function (value, index, original){
+            console.log('Funcion anonima valor: '+value);
+            console.log('Funcion anonima indice: '+index);
+        });
+
+        //FUNCION FLECHA
+        numeros.forEach((value, index, original)=> {
+            console.log('Funcion flecha valor: '+value);
+            console.log('Funcion flecha indice: '+index);
+        });
+        //FUNCION FLECHA SIMPLIFICADISIMAAAA
+        numeros.forEach(value=> console.log('Funcion flecha  simplificada valor: '+value));
+
+    </script>
+</body>
+</html>

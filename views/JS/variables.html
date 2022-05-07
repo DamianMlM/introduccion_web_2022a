@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIABLES</title>
+</head>
+<body>
+    <script>
+        //VARIABLES DE TIPO STRING
+        var textoA = "Comillas dobles";
+        var textoB = 'Comillas Simples';
+        var textoC = "Comillas 'simples' dentro de comillas dobles";
+        var textoD = 'Comillas "dobles"  dentro de comillas simples';
+
+        console.log(textoA);
+        console.log(textoB);
+        console.log(textoC);
+        console.log(textoD);
+
+        //OPERACION ARITMETICA
+        var x = '5';
+        var y = '3.2';
+        
+        document.write(x + y + ' ' + typeof(x + y));
+        document.write('<br>')
+        document.write(x * y + ' ' + typeof(x * y));
+        
+        //VARIABLES DE TIPO NUMBER
+
+        var numberA, numberB;
+
+        numberA = 10;
+        numberB = 3.7;
+
+        console.log(numberA + numberB);
+        console.log(numberA - numberB);
+        console.log(numberA * numberB);
+        console.log(numberA / numberB);
+        console.log(numberA % numberB);
+
+        console.log(3 % 2);
+        console.log(2 % 2);
+
+        console.log(numberA++); //NumberA = NumberA + 1;
+        console.log(numberA);
+
+        console.log(++numberB)//NumberB = NumberB + 1;
+        console.log(numberB)
+
+        //VARIABLES TIPO BOOLEAN
+
+        var verdadero = true;
+        var falso = false;
+        document.write('<br>')
+        
+        //Tabla de verdad AND necesita ambos valores verdaderos
+        console.log(verdadero && verdadero); //true
+        console.log(verdadero && falso); //false
+        console.log(falso && verdadero); //false
+        console.log(falso && falso); //false
+        document.write('<br>')
+
+        //Tabla de verdad OR solo necesita un valor verdadero
+        console.log(verdadero || verdadero); //true
+        console.log(verdadero || falso); //true
+        console.log(falso || verdadero); //true
+        console.log(falso || falso); //false
+        document.write('<br>')
+
+        //CONDICION DE IGUALDAD Y NEGACION
+        console.log(verdadero == falso)
+        console.log(verdadero != falso)
+        
+        console.log(verdadero == 1) //true
+        console.log(verdadero === 1) //false
+        console.log(verdadero !== 1) //true
+
+
+
+    </script>
+</body>
+</html>

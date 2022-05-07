@@ -1,0 +1,25 @@
+
+div{
+    background-color: aquamarine;
+    height: 200px;
+    width: 50%;
+}
+
+h2.a{
+    visibility: visible;
+}
+h2.b{
+    visibility: hidden;
+}
+
+h2.c{
+    visibility: visible;
+}
+h2.d{
+    display: none;
+}
+
+.x{
+    font-style: oblique;
+    
+} 

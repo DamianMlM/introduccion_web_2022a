@@ -1,0 +1,19 @@
+/* SELECTOR COMBINADO DESCENDIENTE */
+div p{
+    background-color: grey;
+}
+
+/* SELECTOR COMBINADOR HIJO  */
+div#hijo > p{
+    background-color: antiquewhite;
+}
+
+/* SELECTOR COMBINADO ADYACENTE */
+div + p{
+    background-color: grey;
+}
+
+/* SELECTOR COMBINADO ADYACENTE */
+div ~ p{
+    background-color: rgb(188, 12, 12);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSICIONES</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: bisque;
+                transition: width  2s, background-color 2s ;
+                transition-duration: 1s;
+            }
+            div:hover{
+                width: 400px;
+                background-color: black;
+            }
+
+            div#1{
+                transition-timing-function:linear ;
+            }
+            div#2{
+                transition-timing-function: ease ;
+            }
+            div#3{
+                transition-timing-function: ease-in;
+            }
+            div#4{
+                transition-timing-function: ease-out;
+            }
+            div#5{
+                transition-timing-function: cubic-bezier(1,.09,1,.06);
+            }
+        </style>
+</head>
+<body>
+    <br>
+    <div></div>
+    <br>
+
+
+    <p>TIMMING FUNCION</p>
+    <div id="1">LINEAR</div>
+    <div id="2">EASE</div>
+    <div id="3">EASE IN</div>
+    <div id="4">EASE OUT</div>
+    <div id="5">EASE IN OUT</div>
+</body>
+</html>

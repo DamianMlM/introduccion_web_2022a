@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARREGLOS Y OBJETOS</title>
+</head>
+<body>
+    <script>
+
+        //ARRAYS
+        var texto = 'DAMIAN'
+        var array = ['naranja', 'pera', texto, 22, , 'barcelona', true]
+    
+
+        console.log(array);
+        console.log(array[0]);
+        console.log(array[1]);
+        console.log(array[6]);
+
+        console.log(array.length) // TOTAL DE CAMPOS DEL ARREGLO
+        console.log(array [array.length-1]) // ULTIMO CAMPO SIEMPRE
+
+        //OBJETOS
+        var persona = {
+            nombre: texto,
+            apellido: 'Mariscal',
+            aficiones: ['futbol', 'nenas', 'musica', 'programar'],
+            inscrito : true
+        };
+
+        console.log(persona);
+        console.log(persona.nombre);
+        console.log(persona.apellido);
+        console.log(persona.aficiones);
+        console.log(persona.inscrito);
+        console.log(persona.aficiones[1]);
+        console.log('-------------------------');
+
+        // Mas metodos para los arreglos
+
+
+        var fruta = ['platano', 'naranja', 'manzana', 'mango'];
+        console.log(fruta);
+        console.log(fruta.toString); //Convierte el arreglo en una cadena de texto
+
+        console.log(fruta.pop); //toma el ultimo elemento y lo elimina
+        console.log(fruta);
+
+        fruta.push('kiwi') //Inserta un elemento al final
+        console.log(fruta);
+
+        console.log(fruta.shift()); //Toma el primer elemento, lo retorna y lo elimina 
+        console.log(fruta);
+        console.log('---------------------------------');
+
+        // Metodo splice, elimina elementos del arreglo con los parametros que le indicquemos y los sustituye por otros en su lugar
+        var nombres = ['Damian', 'Leslie', 'Dulce', 'Ale'];
+        console.log(nombres);
+        console.log(nombres.splice(1, 2, 'Karely', 'Monica'));
+        console.log(nombres);
+        console.log('-------------------------------------------');
+        
+        var arregloConcatenado = fruta.concat(nombres, array); // concatena todos los arreglos que queramos
+        console.log(arregloConcatenado);
+        console.log(nombres);
+        console.log(nombres.sort()); //Ordena alfabeticamente           
+        console.log(nombres.reverse()); //Ordena desde el final al inicio
+        console.log('-------------------------------------------');
+        console.log('-------------------------------------------');
+        
+        var edades = [45, 5, 10, 38, 100, 70];
+        
+        var mayorDeEdad = edades.filter((value, index) => {
+            return value >= 18; //Siempre debemos retornar un valor
+        });
+        
+        console.log(edades);
+        console.log(mayorDeEdad);
+        
+        console.log('-------------------------------------------');
+
+        function prueba(edad, nombre, ...palabras){
+            console.log(palabras);
+        }
+
+        prueba(edades,'ana', 2, null, [] );
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>

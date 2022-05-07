@@ -1,0 +1,32 @@
+
+.a{
+    text-shadow: 2px 2px cadetblue;
+}
+.b{
+    text-shadow: 0px 0px 3px cadetblue, 0px 0px 5px violet;
+}
+#ejemplo1{
+    border: 1px solid ;
+    padding: 10px;
+    box-shadow: 5px 10px #888886;
+}
+
+#ejemplo2{
+    border: 1px solid ;
+    padding: 10px;
+    box-shadow: 5px 10px 8PX #888886;
+}
+#ejemplo3{
+    width: 500px;
+    border: 1px solid ;
+    padding: 10px;
+    box-shadow: 5px 10px 2px  #888886, 10px 20px 5px  cadetblue, 15px 30px 6px indianred;
+}
+
+#card{
+    width: 350;
+    border: 1px ;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 5px skyblue;
+    text-align: justify;
+}

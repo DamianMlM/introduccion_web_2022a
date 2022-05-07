@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+}
+p{
+    /* SOLO SE VA MIRAR CON EL PREFIJO MOZ - EL ESTILO SOLO SE VE EN FIREFOX */
+    background-image: -moz-linear-gradient(top, #F4fa58, #FF0000 );
+
+    /* EL ESTILO SOLO SE VA MIRAR CEN TODOS LOS NAVEGADORES */
+    background-color: #F4fa58;
+}

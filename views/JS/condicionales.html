@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDICIONALES</title>
+</head>
+<body>
+    <script>
+        var edad =Number(prompt("Ingrese su edad: "));
+
+        console.log(edad);
+        
+        if (edad>20) {
+            console.log('Eres mayor de 20 años')
+        }else{
+            console.log('Tienes 20 años o menos')
+        }
+
+        if (edad >= 0 && edad <20) {
+            console.log('Eres menor de 20 años');
+        }else if (edad >=20 && edad <= 40){
+            console.log('Tienes una edad entre 20 y 40 años');
+        }else if (edad > 40){
+            console.log('Tu eres mayor a 40 años');
+        }else{
+            console.log('EDAD ERRONEA: '+ edad);
+        }
+
+        //CONDICION COMPUESTA
+        if ((edad === 0) || (edad < 1 && edad >-1)) {
+                console.log('test');
+        }
+
+        // SWITCH
+        var texto;
+
+        switch (new Date().getDay()) {
+            case 6:
+                text = 'Hoy es sabado';
+                break;
+            case 0:
+                text = 'Hoy es domingo';
+                break;
+            default:
+                text = 'Hoy es un dia diferente a sabado y domingo: ' + new Date().getDay();
+                break;
+        }
+
+        document.write(texto);
+        
+    </script>
+</body>
+</html>

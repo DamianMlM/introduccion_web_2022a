@@ -1,0 +1,36 @@
+
+
+/*              PSEUDO CLASE             */
+/* LINK NO VISITADO */
+a:link{
+    color: blue;
+}
+/* LINK  VISITADO */
+a:visited{
+    color: rgb(11, 184, 95);
+}
+/* LINK EL MAUSE ESTA SOBRE EL LINK */
+a:hover{
+    color: blueviolet;
+}
+/* LINK ESTA SELECCIONADO */
+a:active{
+    color: hotpink;
+}
+/* -------------------------------------------------------- */
+/*                  PSEUDO ELEMENTOS */
+P::first-letter{
+    color: brown;
+    font-size: xx-large;
+}
+p::first-line{
+     color: rgb(0, 76, 190);  
+     font-variant: small-caps;     
+}
+
+/* -------------------------------------------------------- */
+/*  ATRIBUTOS */
+
+a[target= blank]{
+    background-color: yellow;
+}

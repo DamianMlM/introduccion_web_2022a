@@ -1,0 +1,18 @@
+
+.b{
+    border: 5px solid red;
+}
+h2{
+    border: 5px dotted blue;
+}
+div{
+    border: 5px double;
+}
+.a{
+    border-bottom: 5px solid violet;
+    border-top: dashed;
+}   
+.c{
+    border: 8px solid bisque;
+    border-radius: 50px 50px;
+}
